@@ -6,6 +6,14 @@ let rawGradingData = {};
 async function loadData() {
     try {
         const response = await fetch('./data/graders.json');
+        
+        // NEW: Get the last modified date from GitHub's header
+        const lastModified = response.headers.get('Last-Modified');
+        if (lastModified) {
+            const date = new Date(lastModified);
+            document.getElementById('last-update').innerText = `Last Updated: ${date.toLocaleString()}`;
+        }
+
         rawGradingData = await response.json();
         updateTeamStats();
         filterLeaderboard();
