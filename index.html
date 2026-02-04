@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Team Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Grading Team Dashboard</h1>
+        
+        <div class="stats-simple">
+            <span class="label">Total Team Progress:</span>
+            <span id="total-count" class="value">0 Fields</span>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by name..." oninput="filterLeaderboard()">
+            <select id="typeFilter" onchange="filterLeaderboard()">
+                <option value="All">All Types</option>
+                <option value="Worksheet_">Worksheets</option>
+                <option value="Code_Review_">Code Reviews</option>
+                <option value="Quiz_">Quizzes</option>
+                <option value="Create_Project_">Create Projects</option>
+            </select>
+        </div>
+
+        <div id="leaderboard">
+            <p class="no-results">Loading grader data...</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* Team Stats Banner */
+.stats-simple {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.15rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stats-simple .value {
+    font-weight: 800;
+    color: #4caf50;
+    font-size: 1.3rem;
+}
+
+/* Control Bar */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"] { flex-grow: 2; }
+select { flex-grow: 1; cursor: pointer; background: white; }
+
+/* Leaderboard List */
+#leaderboard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    user-select: none;
+}
+
+.leaderboard-item:hover { background-color: #f9f9f9; }
+
+.rank { width: 45px; font-weight: bold; color: #999; font-size: 1rem; }
+.name { flex-grow: 1; font-weight: 500; font-size: 1.1rem; }
+.score { text-align: right; color: #555; }
+
+/* Rank Specific Styles */
+.rank-1 { background-color: #fffdf0; border-left: 5px solid #ffd700; }
+.rank-2 { background-color: #f8f9fa; border-left: 5px solid #c0c0c0; }
+.rank-3 { background-color: #fffaf5; border-left: 5px solid #cd7f32; }
+
+/* Profile Mode (Search View) */
+.leaderboard-item.profile-mode {
+    border-left: 5px solid #3498db;
+    background-color: #fcfcfc;
+}
+.leaderboard-item.profile-mode .rank { color: #3498db; }
+
+/* Expandable Details */
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background: #fdfdfd;
+}
+
+.details.open {
+    max-height: 1500px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0 20px 0 65px;
+    margin: 0;
+}
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-bottom: 1px dashed #eee;
+}
+
+.details li:last-child { border-bottom: none; }
+
+.no-results {
+    padding: 30px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
