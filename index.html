@@ -20,13 +20,16 @@
 
         <div class="controls">
             <input type="text" id="searchInput" placeholder="Search by name..." oninput="filterLeaderboard()">
-            <select id="typeFilter" onchange="filterLeaderboard()">
-                <option value="All">All Types</option>
-                <option value="Worksheet">Worksheets</option>
-                <option value="Code Review">Code Reviews</option>
-                <option value="Quiz">Quizzes</option>
-                <option value="Create Project">Create Projects</option>
-            </select>
+            
+            <div class="multi-select-container">
+                <button type="button" class="multi-select-button" onclick="toggleDropdown()">Select Types</button>
+                <div id="checkboxes" class="checkbox-dropdown">
+                    <label><input type="checkbox" value="Worksheet" onchange="filterLeaderboard()" checked> Worksheets</label>
+                    <label><input type="checkbox" value="Code Review" onchange="filterLeaderboard()"> Code Reviews</label>
+                    <label><input type="checkbox" value="Quiz" onchange="filterLeaderboard()"> Quizzes</label>
+                    <label><input type="checkbox" value="Create Project" onchange="filterLeaderboard()" checked> Create Projects</label>
+                </div>
+            </div>
         </div>
 
         <div id="leaderboard">

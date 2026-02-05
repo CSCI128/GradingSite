@@ -131,3 +131,48 @@ select { flex-grow: 1; cursor: pointer; background: white; }
     color: #888;
     font-style: italic;
 }
+
+/* Multi-select styling */
+.multi-select-container {
+    position: relative;
+    flex-grow: 1;
+}
+
+.multi-select-button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.checkbox-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 10;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.checkbox-dropdown label {
+    display: block;
+    padding: 8px 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.checkbox-dropdown label:hover {
+    background: #f0f2f5;
+}
+
+.checkbox-dropdown input {
+    margin-right: 10px;
+}

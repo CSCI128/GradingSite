@@ -1,72 +1,66 @@
-let rawGradingData = {};
+// Add this at the top to handle the dropdown UI
+function toggleDropdown() {
+    const checkboxes = document.getElementById("checkboxes");
+    checkboxes.style.display = checkboxes.style.display === "block" ? "none" : "block";
+}
 
-/**
- * Initial data load from the JSON file
- */
+// Close dropdown if user clicks outside
+window.onclick = function(event) {
+    if (!event.target.matches('.multi-select-button') && !event.target.closest('.checkbox-dropdown')) {
+        const dropdowns = document.getElementsByClassName("checkbox-dropdown");
+        for (let d of dropdowns) { d.style.display = "none"; }
+    }
+}
+
 async function loadData() {
     try {
         const response = await fetch('./data/graders.json');
-        
-        // NEW: Get the last modified date from GitHub's header
         const lastModified = response.headers.get('Last-Modified');
         if (lastModified) {
             const date = new Date(lastModified);
             document.getElementById('last-update').innerText = `Last Updated: ${date.toLocaleString()}`;
         }
-
         rawGradingData = await response.json();
         updateTeamStats();
-        filterLeaderboard();
+        filterLeaderboard(); // This will now use the default checked boxes
     } catch (e) {
         console.error("Error loading grader data:", e);
         document.getElementById('leaderboard').innerHTML = '<p class="no-results">Error loading data.</p>';
     }
 }
 
-/**
- * Calculates and updates the total fields graded by the entire team
- */
-function updateTeamStats() {
-    const total = Object.values(rawGradingData).reduce((sum, grader) => 
-        sum + (grader.statistics.totalGradedFields || 0), 0);
-    document.getElementById('total-count').innerText = `${total.toLocaleString()} Fields`;
-}
-
-/**
- * Filters, sorts, and renders the leaderboard based on UI inputs
- */
 function filterLeaderboard() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    const typeFilter = document.getElementById('typeFilter').value;
+    
+    // Get all selected types into an array
+    const selectedTypes = Array.from(document.querySelectorAll('#checkboxes input:checked')).map(cb => cb.value);
+    
     const container = document.getElementById('leaderboard');
 
-    // 1. Process and Map Data
     let list = Object.entries(rawGradingData).map(([name, data]) => {
         let filteredScore = 0;
         let assignments = Object.entries(data.gradedAssignments)
-            .filter(([key]) => typeFilter === "All" || key.startsWith(typeFilter))
+            .filter(([key]) => {
+                // Check if the assignment key starts with any of our selected types
+                return selectedTypes.some(type => key.startsWith(type));
+            })
             .map(([key, count]) => {
                 filteredScore += count;
-                // Clean up key: "Worksheet_1_Name" -> "Worksheet 1 Name"
                 return { name: key.replace(/_/g, ' '), count };
             });
         
         return { name, filteredScore, assignments };
     });
 
-    // 2. Filter by search term and ensure they have a score in the current category
     list = list.filter(item => 
         item.name.toLowerCase().includes(searchTerm) && item.filteredScore > 0
     );
 
-    // 3. Sort by Score (Descending)
     list.sort((a, b) => b.filteredScore - a.filteredScore);
 
-    // 4. UI Logic: Disable leaderboard visuals if searching
     const isSearching = searchTerm.length > 0;
     const showRank = !isSearching && list.length > 1;
 
-    // 5. Render
     container.innerHTML = '';
     if (list.length === 0) {
         container.innerHTML = '<p class="no-results">No matching records found.</p>';
@@ -76,11 +70,8 @@ function filterLeaderboard() {
     list.forEach((grader, index) => {
         const wrapper = document.createElement('div');
         wrapper.className = 'leaderboard-wrapper';
-        
         const isTopThree = showRank && index < 3;
         const row = document.createElement('div');
-        
-        // Mode toggle: Use profile-mode styles if a search is active
         row.className = `leaderboard-item ${isTopThree ? 'rank-' + (index + 1) : ''} ${isSearching ? 'profile-mode' : ''}`;
         
         row.innerHTML = `
@@ -90,15 +81,12 @@ function filterLeaderboard() {
         `;
 
         const details = document.createElement('div');
-        details.className = `details ${isSearching ? 'open' : ''}`; // Auto-expand when searching
-        
+        details.className = `details ${isSearching ? 'open' : ''}`;
         const assignmentRows = grader.assignments
             .map(a => `<li><span>${a.name}</span> <strong>${a.count}</strong></li>`)
             .join('');
             
         details.innerHTML = `<ul>${assignmentRows}</ul>`;
-
-        // Click to toggle (ignored if auto-opened by search, but functional for list browsing)
         row.onclick = () => details.classList.toggle('open');
         
         wrapper.appendChild(row);
@@ -106,6 +94,3 @@ function filterLeaderboard() {
         container.appendChild(wrapper);
     });
 }
-
-// Kick off the load on page start
-window.onload = loadData;
