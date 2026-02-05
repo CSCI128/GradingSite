@@ -19,7 +19,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Team Stats Banner */
 .stats-simple {
     background: #2c3e50;
     color: white;
@@ -47,7 +46,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-input[type="text"], select {
+input[type="text"] {
+    flex-grow: 2;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -55,10 +55,68 @@ input[type="text"], select {
     outline: none;
 }
 
-input[type="text"] { flex-grow: 2; }
-select { flex-grow: 1; cursor: pointer; background: white; }
+/* Custom Select Styling */
+.custom-select-wrapper {
+    position: relative;
+    flex-grow: 1;
+    min-width: 180px;
+}
 
-/* Leaderboard List */
+.select-box {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.select-box .arrow {
+    font-size: 0.7rem;
+    color: #888;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.options-container.show {
+    display: block;
+}
+
+.options-container label {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 0.9rem;
+}
+
+.options-container label:hover {
+    background-color: #f0f2f5;
+}
+
+.options-container input {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* Leaderboard Content */
 #leaderboard {
     background: white;
     border-radius: 12px;
@@ -73,28 +131,18 @@ select { flex-grow: 1; cursor: pointer; background: white; }
     border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
     transition: background 0.2s ease;
-    user-select: none;
 }
 
 .leaderboard-item:hover { background-color: #f9f9f9; }
 
-.rank { width: 45px; font-weight: bold; color: #999; font-size: 1rem; }
-.name { flex-grow: 1; font-weight: 500; font-size: 1.1rem; }
+.rank { width: 45px; font-weight: bold; color: #999; }
+.name { flex-grow: 1; font-weight: 500; }
 .score { text-align: right; color: #555; }
 
-/* Rank Specific Styles */
 .rank-1 { background-color: #fffdf0; border-left: 5px solid #ffd700; }
 .rank-2 { background-color: #f8f9fa; border-left: 5px solid #c0c0c0; }
 .rank-3 { background-color: #fffaf5; border-left: 5px solid #cd7f32; }
 
-/* Profile Mode (Search View) */
-.leaderboard-item.profile-mode {
-    border-left: 5px solid #3498db;
-    background-color: #fcfcfc;
-}
-.leaderboard-item.profile-mode .rank { color: #3498db; }
-
-/* Expandable Details */
 .details {
     max-height: 0;
     overflow: hidden;
@@ -103,7 +151,7 @@ select { flex-grow: 1; cursor: pointer; background: white; }
 }
 
 .details.open {
-    max-height: 1500px;
+    max-height: 1000px;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
@@ -118,61 +166,9 @@ select { flex-grow: 1; cursor: pointer; background: white; }
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
     border-bottom: 1px dashed #eee;
 }
 
-.details li:last-child { border-bottom: none; }
-
-.no-results {
-    padding: 30px;
-    text-align: center;
-    color: #888;
-    font-style: italic;
-}
-
-/* Multi-select styling */
-.multi-select-container {
-    position: relative;
-    flex-grow: 1;
-}
-
-.multi-select-button {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: white;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.checkbox-dropdown {
-    display: none;
-    position: absolute;
-    background: white;
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 10;
-    margin-top: 5px;
-    padding: 10px;
-}
-
-.checkbox-dropdown label {
-    display: block;
-    padding: 8px 5px;
-    cursor: pointer;
-    font-size: 0.95rem;
-}
-
-.checkbox-dropdown label:hover {
-    background: #f0f2f5;
-}
-
-.checkbox-dropdown input {
-    margin-right: 10px;
-}
+.no-results { padding: 30px; text-align: center; color: #888; font-style: italic; }
