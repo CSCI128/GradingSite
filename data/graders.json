@@ -58,24 +58,28 @@
     "Andrew Grimes": {
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 27,
-            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 26
+            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 26,
+            "Code_Review__Assessment_1_evaluations_6_FLAG_Worked_Alone": 1
         },
-        "commentedAssignments": {},
+        "commentedAssignments": {
+            "Code_Review__Assessment_1_evaluations_6_FLAG_Worked_Alone": 1
+        },
         "statistics": {
-            "totalGradedFields": 53,
-            "totalCommentedFields": 0
+            "totalGradedFields": 54,
+            "totalCommentedFields": 1
         }
     },
     "Angela Friedman": {
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 35,
-            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 34
+            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 34,
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 1
         },
         "commentedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 1
         },
         "statistics": {
-            "totalGradedFields": 69,
+            "totalGradedFields": 70,
             "totalCommentedFields": 1
         }
     },
@@ -109,10 +113,13 @@
         }
     },
     "Avie Burris": {
-        "gradedAssignments": {},
+        "gradedAssignments": {
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 35,
+            "Worksheet_2_Second_Name_Slot_evaluations_1_Effort": 35
+        },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 0,
+            "totalGradedFields": 70,
             "totalCommentedFields": 0
         }
     },
@@ -165,11 +172,11 @@
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 19,
             "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 18,
-            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 18
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 17
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 55,
+            "totalGradedFields": 54,
             "totalCommentedFields": 0
         }
     },
@@ -202,29 +209,36 @@
     "Derek Kukla": {
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 17,
-            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 55
+            "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 55,
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 31,
+            "Worksheet_2_Second_Name_Slot_evaluations_1_Effort": 13,
+            "Code_Review__Assessment_1_evaluations_5": 1
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 72,
+            "totalGradedFields": 117,
             "totalCommentedFields": 0
         }
     },
     "Eknara Dassanayake": {
         "gradedAssignments": {
-            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 1
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 1,
+            "Worksheet_3_First_Name_Slot_evaluations_1_Attendance": 28,
+            "Worksheet_3_Second_Name_Slot_evaluations_1_Attendance": 29
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 1,
+            "totalGradedFields": 58,
             "totalCommentedFields": 0
         }
     },
     "Elanor Fugate": {
-        "gradedAssignments": {},
+        "gradedAssignments": {
+            "Worksheet_3_Second_Name_Slot_evaluations_1_Attendance": 33
+        },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 0,
+            "totalGradedFields": 33,
             "totalCommentedFields": 0
         }
     },
@@ -239,6 +253,16 @@
             "totalCommentedFields": 0
         }
     },
+    "Ge Jin": {
+        "gradedAssignments": {
+            "Worksheet_3_Second_Name_Slot_evaluations_1_Attendance": 1
+        },
+        "commentedAssignments": {},
+        "statistics": {
+            "totalGradedFields": 1,
+            "totalCommentedFields": 0
+        }
+    },
     "Grant Uher": {
         "gradedAssignments": {
             "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 27,
@@ -250,18 +274,28 @@
             "totalCommentedFields": 0
         }
     },
+    "Halli Millet": {
+        "gradedAssignments": {
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 1
+        },
+        "commentedAssignments": {},
+        "statistics": {
+            "totalGradedFields": 1,
+            "totalCommentedFields": 0
+        }
+    },
     "Iris Nemechek": {
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 1,
             "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 35,
-            "Worksheet_2_Second_Name_Slot_evaluations_1_Effort": 32,
-            "Code_Review__Assessment_1_evaluations_1": 748,
-            "Code_Review__Assessment_1_evaluations_5": 44,
-            "Code_Review__Assessment_1_evaluations_4": 584
+            "Worksheet_2_Second_Name_Slot_evaluations_1_Effort": 77,
+            "Code_Review__Assessment_1_evaluations_1": 882,
+            "Code_Review__Assessment_1_evaluations_5": 587,
+            "Code_Review__Assessment_1_evaluations_4": 588
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 1444,
+            "totalGradedFields": 2170,
             "totalCommentedFields": 0
         }
     },
@@ -277,16 +311,16 @@
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 19,
             "Worksheet_2_Second_Name_Slot_evaluations_1_Effort": 12,
-            "Code_Review__Assessment_1_evaluations_1": 423,
-            "Code_Review__Assessment_1_evaluations_2": 1169,
-            "Code_Review__Assessment_1_evaluations_3": 1171,
-            "Code_Review__Assessment_1_evaluations_5": 542,
+            "Code_Review__Assessment_1_evaluations_1": 298,
+            "Code_Review__Assessment_1_evaluations_5": 2,
+            "Code_Review__Assessment_1_evaluations_2": 295,
             "Code_Review__Assessment_1_evaluations_4": 2,
-            "Code_Review__Assessment_1_evaluations_6_FLAG_Worked_Alone": 293
+            "Code_Review__Assessment_1_evaluations_3": 269,
+            "Code_Review__Assessment_1_evaluations_6_FLAG_Worked_Alone": 294
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 3631,
+            "totalGradedFields": 1191,
             "totalCommentedFields": 0
         }
     },
@@ -407,10 +441,13 @@
         }
     },
     "Riley Pogue": {
-        "gradedAssignments": {},
+        "gradedAssignments": {
+            "Code_Review__Assessment_1_evaluations_2": 885,
+            "Code_Review__Assessment_1_evaluations_3": 911
+        },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 0,
+            "totalGradedFields": 1796,
             "totalCommentedFields": 0
         }
     },
@@ -423,14 +460,10 @@
         }
     },
     "Steven Wertz": {
-        "gradedAssignments": {
-            "Code_Review__Assessment_1_evaluations_1": 1,
-            "Code_Review__Assessment_1_evaluations_2": 3,
-            "Code_Review__Assessment_1_evaluations_3": 1
-        },
+        "gradedAssignments": {},
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 5,
+            "totalGradedFields": 0,
             "totalCommentedFields": 0
         }
     },
@@ -446,11 +479,11 @@
         "gradedAssignments": {
             "Worksheet_1__First_Name_Slot_evaluations_1_Effort": 33,
             "Worksheet_1__Second_Name_Slot_evaluations_1_Effort": 35,
-            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 2
+            "Worksheet_2_First_Name_Slot_evaluations_1_Effort": 7
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 70,
+            "totalGradedFields": 75,
             "totalCommentedFields": 0
         }
     },
@@ -478,4 +511,4 @@
             "totalCommentedFields": 0
         }
     }
-}
+} 
