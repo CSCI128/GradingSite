@@ -17,11 +17,12 @@
     },
     "Alex Chakarov": {
         "gradedAssignments": {
-            "Worksheet 1": 2
+            "Worksheet 1": 2,
+            "Quiz 1": 870
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 2,
+            "totalGradedFields": 872,
             "totalCommentedFields": 0
         }
     },
@@ -110,21 +111,23 @@
     },
     "Avi Aggarwal": {
         "gradedAssignments": {
-            "Worksheet 2": 59
+            "Worksheet 2": 59,
+            "Worksheet 3": 70
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 59,
+            "totalGradedFields": 129,
             "totalCommentedFields": 0
         }
     },
     "Avie Burris": {
         "gradedAssignments": {
-            "Worksheet 2": 70
+            "Worksheet 2": 70,
+            "Worksheet 3": 35
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 70,
+            "totalGradedFields": 105,
             "totalCommentedFields": 0
         }
     },
@@ -193,6 +196,26 @@
             "totalCommentedFields": 0
         }
     },
+    "Christine Liebe": {
+        "gradedAssignments": {
+            "Quiz 1": 51
+        },
+        "commentedAssignments": {},
+        "statistics": {
+            "totalGradedFields": 51,
+            "totalCommentedFields": 0
+        }
+    },
+    "Clark Scholten": {
+        "gradedAssignments": {
+            "Quiz 1": 5
+        },
+        "commentedAssignments": {},
+        "statistics": {
+            "totalGradedFields": 5,
+            "totalCommentedFields": 0
+        }
+    },
     "Cooper Lappin": {
         "gradedAssignments": {
             "Worksheet 1": 6,
@@ -257,12 +280,14 @@
     },
     "Ge Jin": {
         "gradedAssignments": {
-            "Worksheet 3": 1
+            "Quiz 1": 334
         },
-        "commentedAssignments": {},
+        "commentedAssignments": {
+            "Quiz 1": 1
+        },
         "statistics": {
-            "totalGradedFields": 1,
-            "totalCommentedFields": 0
+            "totalGradedFields": 334,
+            "totalCommentedFields": 1
         }
     },
     "Grant Uher": {
@@ -277,23 +302,26 @@
     },
     "Halli Millet": {
         "gradedAssignments": {
-            "Worksheet 2": 1
+            "Worksheet 2": 1,
+            "Worksheet 3": 35
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 1,
+            "totalGradedFields": 36,
             "totalCommentedFields": 0
         }
     },
     "Iris Nemechek": {
         "gradedAssignments": {
             "Worksheet 1": 1,
-            "Worksheet 2": 113,
-            "Code Review Assessment 1": 2085
+            "Worksheet 2": 115,
+            "Worksheet 3": 34,
+            "Quiz 1": 942,
+            "Code Review Assessment 1": 2088
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 2199,
+            "totalGradedFields": 3180,
             "totalCommentedFields": 0
         }
     },
@@ -309,11 +337,11 @@
         "gradedAssignments": {
             "Worksheet 1": 19,
             "Worksheet 2": 12,
-            "Code Review Assessment 1": 1036
+            "Code Review Assessment 1": 864
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 1067,
+            "totalGradedFields": 895,
             "totalCommentedFields": 0
         }
     },
@@ -335,11 +363,12 @@
     },
     "Julia Kolomiitseva": {
         "gradedAssignments": {
-            "Worksheet 2": 34
+            "Worksheet 2": 34,
+            "Worksheet 3": 16
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 34,
+            "totalGradedFields": 50,
             "totalCommentedFields": 0
         }
     },
@@ -399,6 +428,16 @@
             "totalCommentedFields": 0
         }
     },
+    "Mark Miller": {
+        "gradedAssignments": {
+            "Quiz 1": 13
+        },
+        "commentedAssignments": {},
+        "statistics": {
+            "totalGradedFields": 13,
+            "totalCommentedFields": 0
+        }
+    },
     "Mihai Nicoara": {
         "gradedAssignments": {
             "Worksheet 1": 4,
@@ -412,13 +451,14 @@
     },
     "Nina Subramanian": {
         "gradedAssignments": {
-            "Worksheet 2": 41
+            "Worksheet 2": 41,
+            "Worksheet 3": 35
         },
         "commentedAssignments": {
             "Worksheet 2": 34
         },
         "statistics": {
-            "totalGradedFields": 41,
+            "totalGradedFields": 76,
             "totalCommentedFields": 34
         }
     },
@@ -432,24 +472,27 @@
     },
     "Riley Pogue": {
         "gradedAssignments": {
-            "Code Review Assessment 1": 1943
+            "Code Review Assessment 1": 2083
         },
         "commentedAssignments": {
-            "Code Review Assessment 1": 16
+            "Code Review Assessment 1": 76
         },
         "statistics": {
-            "totalGradedFields": 1943,
-            "totalCommentedFields": 16
+            "totalGradedFields": 2083,
+            "totalCommentedFields": 76
         }
     },
     "Rob Thompson": {
         "gradedAssignments": {
-            "Create Project Ideation Milestone evaluations 1": 24
+            "Quiz 1": 1635,
+            "Create Project Ideation Milestone evaluations 1": 111
         },
-        "commentedAssignments": {},
+        "commentedAssignments": {
+            "Quiz 1": 612
+        },
         "statistics": {
-            "totalGradedFields": 24,
-            "totalCommentedFields": 0
+            "totalGradedFields": 1746,
+            "totalCommentedFields": 612
         }
     },
     "Steve Dimas": {
@@ -491,21 +534,24 @@
     "Tristen Erpelding": {
         "gradedAssignments": {
             "Worksheet 1": 72,
-            "Worksheet 2": 71
+            "Worksheet 2": 71,
+            "Worksheet 3": 37
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 143,
+            "totalGradedFields": 180,
             "totalCommentedFields": 0
         }
     },
     "Zoey Ganzhorn": {
         "gradedAssignments": {
-            "Worksheet 1": 69
+            "Worksheet 1": 69,
+            "Worksheet 3": 37,
+            "Code Review Assessment 1": 29
         },
         "commentedAssignments": {},
         "statistics": {
-            "totalGradedFields": 69,
+            "totalGradedFields": 135,
             "totalCommentedFields": 0
         }
     }
